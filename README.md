@@ -44,6 +44,8 @@ export RAG_OLLAMA_URL=http://192.168.1.10:11434   # if Ollama runs elsewhere on 
 
 Markdown files are chunked on header boundaries, prepended with their parent-header breadcrumb (the single biggest retrieval-quality lever — see `corpus/rag-local-stack.md`), and indexed incrementally.
 
+A larger example corpus to try this against: [`jblenman/knowledge`](https://github.com/jblenman/knowledge) — a public knowledge garden with notes on languages, tools, and patterns. Clone it and point `RAG_CORPUS_ROOT` at the checkout.
+
 ## Design notes
 
 The most useful background is in the corpus itself:
